@@ -5,12 +5,18 @@
 package máquinaexpendedoraUnderwoodLuke2223;
 
 /**
+ * Clase Main del programa, que define un objeto MáquinaExpendedoraUnderwoodLuke2223 con unos
+ * parámetros y realiza acciones de subir y obtener
  *
- * @author efech
+ * @author Luke Anthony Underwood
  */
 public class Main {
 
     /**
+     * Método Main
+     * 
+     * Este método es el principal de ejecución del programa
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -30,6 +36,17 @@ public class Main {
         obtener3_UnidadesUnderwoodLuke2223(snack);
         
     }
+    
+    /**
+     * Método obtener3_UnidadesUnderwoodLuke2223
+     * 
+     * En este método vamos a intentar sacar 12 snack, y tengo 50 euros.
+     * Como no hay unidades suficientes en la máquina saltará
+     * una excepción y no se modificará el nº de unidades de la tienda 
+     * 
+     * @param snack 
+     * @throws Exception cuando no hay suficientes unidades
+     */
 
     private static void obtener3_UnidadesUnderwoodLuke2223(MáquinaExpendedoraUnderwoodLuke2223 snack) {
         /*Vamos a intentar sacar 12 snack, y tengo 50 euros.
@@ -45,6 +62,17 @@ public class Main {
             
         }
     }
+    
+    /**
+     * Método obtener2_UnidadesUnderwoodLuke2223
+     * 
+     * En este método vamos a intentar sacar 2 snack, y tengo 9 euros.
+        Ahora se actualizará el número de snack que tenemos en
+        la máquina 
+     * 
+     * @param snack 
+     * @throws Exception cuando no hay suficientes dinero
+     */
 
     private static void obtener2_UnidadesUnderwoodLuke2223(MáquinaExpendedoraUnderwoodLuke2223 snack) {
         /*Vamos a intentar sacar 2 snack, y tengo 9 euros.
@@ -60,6 +88,17 @@ public class Main {
             
         }
     }
+    
+    /**
+     * Método obtener1_UnidadesUnderwoodLuke2223
+     * 
+     * En este método vamos a intentar sacar 2 snack, y tengo 5 euros.
+        Como no hay dinero suficiente saltará
+        una excepción y no se modificará el nº de unidades de la tienda
+     * 
+     * @param snack 
+     * @throws Exception cuando no hay suficientes dinero
+     */
 
     private static void obtener1_UnidadesUnderwoodLuke2223(MáquinaExpendedoraUnderwoodLuke2223 snack) {
         /*Vamos a intentar sacar 2 snack, y tengo 5 euros.
@@ -75,6 +114,16 @@ public class Main {
             
         }
     }
+    
+    /**
+     * Método sube2_PrecioUnderwoodLuke2223
+     * 
+     * En este método vamos a aumentar el precio 3€, como supera el precio máximo establecido la operación
+        no tendrá éxito y se mantendrá el precio anterior
+     * 
+     * @param snack 
+     * @throws Exception cuando el precio supere el precio máximo de 5 €
+     */
 
     private static void sube2_PrecioUnderwoodLuke2223(MáquinaExpendedoraUnderwoodLuke2223 snack) {
         /*Vamos a aumentar el precio 3€, como supera el precio máximo establecido la operación
@@ -87,6 +136,16 @@ public class Main {
             System.out.println("Error al aumentar el precio porque se supera el precio máximo de 5 €");
         }
     }
+    
+    /**
+     * Método sube1_PrecioUnderwoodLuke2223
+     * 
+     * En este método vamos a aumentar el precio 1€, como no supera el precio máximo establecido la operación
+        tendrá éxito y el nuevo precio será de 3€
+     * 
+     * @param snack 
+     * @throws Exception al aumentar el precio
+     */
 
     private static void sube1_PrecioUnderwoodLuke2223(MáquinaExpendedoraUnderwoodLuke2223 snack) {
         /*Vamos a aumentar el precio 1€, como no supera el precio máximo establecido la operación
